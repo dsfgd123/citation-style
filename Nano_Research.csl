@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0">
+  <info>
+    <title>Nano Research</title>
+    <id>http://www.zotero.org/styles/nano-research</id>
+    <link href="http://www.zotero.org/styles/nano-research" rel="self"/>
+    <author>
+      <name>Custom CSL for Nano Research</name>
+    </author>
+    <category citation-format="numeric"/>
+    <category field="science"/>
+    <updated>2025-05-23T00:00:00+00:00</updated>
+  </info>
+  <citation>
+    <layout prefix="[" suffix="]" delimiter=", ">
+      <text variable="citation-number"/>
+    </layout>
+  </citation>
+  <bibliography et-al-min="6" et-al-use-first="5" second-field-align="flush">
+    <layout>
+      <text prefix="[" suffix="] " variable="citation-number"/>
+      <names variable="author">
+        <name and="symbol" delimiter=", "/>
+        <label form="short" prefix=", " suffix="."/>
+      </names>
+      <text variable="title" prefix=" " suffix=". "/>
+      <group delimiter=", ">
+        <text variable="container-title"/>
+        <text variable="volume"/>
+        <text variable="page"/>
+        <date variable="issued">
+          <date-part name="year"/>
+        </date>
+      </group>
+      <text variable="DOI" prefix=". DOI: "/>
+    </layout>
+  </bibliography>
+</style>
